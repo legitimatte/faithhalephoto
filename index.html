@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+    <style>
+        /* Some basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="changeTextButton">Change Text</button>
+    <p id="targetParagraph">Click the button to change this text!</p>
+
+    <script>
+        // JavaScript code for DOM manipulation
+
+        // Get references to the button and paragraph elements
+        var changeTextButton = document.getElementById('changeTextButton');
+        var targetParagraph = document.getElementById('targetParagraph');
+
+        // Add a click event listener to the button
+        changeTextButton.addEventListener('click', function() {
+            // Change the text content of the paragraph when the button is clicked
+            targetParagraph.textContent = 'Text changed using JavaScript!';
+        });
+    </script>
+
+</body>
+</html>

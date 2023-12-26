@@ -1,45 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation Example</title>
-    <style>
-        /* Some basic styling for demonstration purposes */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-        }
-        button {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        p {
-            font-size: 18px;
-            margin-top: 20px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is the meta description">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+    /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="homePage.css">
+    <title>Faith Hale Photo</title>
 </head>
+
 <body>
+    <header>
+        <label for="burgerMenu">☰</label>
+        <input type="checkbox" id="burgerMenu"></input>
 
-    <button id="changeTextButton">Change Text</button>
-    <p id="targetParagraph">Click the button to change this text!</p>
+        <nav id="menu">
+            <ul>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/portfolio.html">Portfolio</a></li>
+                <li><a href="/investment.html">Investment</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <script>
-        // JavaScript code for DOM manipulation
+        <!-- <h1><a href=""><img src="images/FaithHalePhotoLogo.svg" alt="Faith Hale Photo"></a></h1> -->
+        <!-- <h1><a href=""><img src="images/FaithHaleLogo2.svg" alt="Faith Hale Photo"></a></h1> -->
+        <h1><a href=""><img src="images/FaithHaleLogo3.svg" alt="Faith Hale Photo"></a></h1>
 
-        // Get references to the button and paragraph elements
-        var changeTextButton = document.getElementById('changeTextButton');
-        var targetParagraph = document.getElementById('targetParagraph');
+        <nav id="socialMedia">
+            <ul>
+                <li><a href=""><img src="images/tiktok.svg" alt="TikTok Logo"></a></li>
+                <li><a href=""><img src="images/instagram.svg" alt="Instagram Logo"></a></li>
+                <li><a href=""><img src="images/facebook.svg" alt="Facebook Logo"></a></li>
+            </ul>
+        </nav>
+    </header>
 
-        // Add a click event listener to the button
-        changeTextButton.addEventListener('click', function() {
-            // Change the text content of the paragraph when the button is clicked
-            targetParagraph.textContent = 'Text changed using JavaScript!';
-        });
-    </script>
+    <main>
+        <!-- <ul>
+            <li style="font-family: 'Greatvibes', sans-serif;">Faith Hale Photo</li>
+            <li style="font-family: 'PlayfairDisplayRegular', sans-serif; font-size: 22px;">Faith is a 22 year old photographer out of Northern Colorado. She got her start in 2019 working as the Head photographer of the local student paper. Faith then became the official photographer of the Indian Peaks Girls Softball Association. While workimg with the IPGSA, faith was a finalist in the Run for Art competition sponsored by the Fondazione Guilio Onesti Academia Olympica Nationale Italiana  Non-Profit. Faith worked with Yellowscene magazine to capture vignettes of local culture and foods in the Denver Boulder area. She was featured in LA magazine, and (there’s one other I’m blanking on the name I’ll have to go find it) </li>
+            <li style="font-family: 'SenjaSantuy', sans-serif;">Faith Hale Photo</li>
+            <li style="font-family: 'PlayfairDisplayRegular', sans-serif; font-size: 22px;">Faith is a 22 year old photographer out of Northern Colorado. She got her start in 2019 working as the Head photographer of the local student paper. Faith then became the official photographer of the Indian Peaks Girls Softball Association. While workimg with the IPGSA, faith was a finalist in the Run for Art competition sponsored by the Fondazione Guilio Onesti Academia Olympica Nationale Italiana  Non-Profit. Faith worked with Yellowscene magazine to capture vignettes of local culture and foods in the Denver Boulder area. She was featured in LA magazine, and (there’s one other I’m blanking on the name I’ll have to go find it) </li>
+            <li style="font-family: 'Barokah', sans-serif;">Faith Hale Photo</li>
+            <li style="font-family: 'PlayfairDisplayRegular', sans-serif; font-size: 22px;">Faith is a 22 year old photographer out of Northern Colorado. She got her start in 2019 working as the Head photographer of the local student paper. Faith then became the official photographer of the Indian Peaks Girls Softball Association. While workimg with the IPGSA, faith was a finalist in the Run for Art competition sponsored by the Fondazione Guilio Onesti Academia Olympica Nationale Italiana  Non-Profit. Faith worked with Yellowscene magazine to capture vignettes of local culture and foods in the Denver Boulder area. She was featured in LA magazine, and (there’s one other I’m blanking on the name I’ll have to go find it) </li>
+            <li>☰</li>
+            <li>≡</li>
+        </ul> -->
 
+        <div id="heroSection">
+            <img src="https://unsplash.it/450/450?image=8" alt="">
+            <div id="heroText">
+                <div>
+                    <h1>Faith Hale</h1>
+                    <p>is a 22 year old photographer out of Northern Colorado. She got her start in 2019 working as the Head photographer of the local student paper. Faith then became the official photographer of the Indian Peaks Girls Softball Association. While workimg with the IPGSA, faith was a finalist in the Run for Art competition sponsored by the Fondazione Guilio Onesti Academia Olympica Nationale Italiana Non-Profit. Faith worked with Yellowscene magazine to capture vignettes of local culture and foods in the Denver Boulder area. She was featured in LA magazine, and (there’s one other I’m blanking on the name I’ll have to go find it)</p>
+                </div>
+                <p>Bookings / Inquiries: faithehalephoto@gmail.com</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <!-- <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+    ></script> -->
 </body>
 </html>

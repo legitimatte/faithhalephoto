@@ -1,0 +1,100 @@
+// foundation
+@use '_reset';
+
+@font-face {
+    font-family: 'Greatvibes';
+    src: url('fonts/GreatVibes.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SenjaSantuy';
+    src: url('fonts/SenjaSantuy.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Barokah';
+    src: url('fonts/BarokahSignatureRegular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplayRegular';
+    src: url('fonts/PlayfairDisplayRegular.woff') format('woff');
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+main {
+    background-color: #d5d7c8;
+    background-color: #e2e3dd;
+    min-height: 85vh;
+}
+  
+li {
+    // font-family: 'Greatvibes', sans-serif;
+    // font-family: 'SenjaSantuy', sans-serif;
+    // font-family: 'Barokah', sans-serif;
+    // font-family: 'PlayfairDisplayRegular', sans-serif;
+    // font-size: 120px;
+    // margin: 5%;
+    // padding: 0;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: red;
+    padding: 1%;
+
+    h1 {
+        font-size: 48px;
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+            width: 35%;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    label {
+        width: 150px;
+        margin: 0 0 15px 0;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        // background-color: green;
+        font-family: 'PlayfairDisplayRegular', sans-serif;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
+}
+
+#menu {
+    display: none;
+}
+
+#socialMedia {
+
+    ul {
+        width: 150px;
+        display: flex;
+        justify-content: space-around;
+        // background-color: green;
+
+        li {
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+}

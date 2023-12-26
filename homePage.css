@@ -1,0 +1,29 @@
+#heroSection {
+  padding: 5% 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+#heroSection img {
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px #181818;
+}
+
+#heroText {
+  width: 40%;
+  margin: 0 2%;
+  margin: 2% 2% 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#heroText h1 {
+  font-family: "Barokah", sans-serif;
+  font-size: 74px;
+  font-size: 28px;
+}
+#heroText p {
+  display: flex;
+  line-height: 34px;
+  font-size: 16px;
+  font-family: "PlayfairDisplayRegular", sans-serif;
+}/*# sourceMappingURL=homePage.css.map */

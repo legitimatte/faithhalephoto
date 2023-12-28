@@ -69,12 +69,11 @@ table {
   src: url("fonts/PlayfairDisplayRegular.woff") format("woff");
 }
 body {
-  background-color: #fbfbfb;
+  background-color: #e2e3dd;
+  z-index: 1;
 }
 
 main {
-  background-color: #d5d7c8;
-  background-color: #e2e3dd;
   min-height: 85vh;
 }
 
@@ -82,11 +81,14 @@ li {
   list-style-type: none;
 }
 
-header {
+header div {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fbfbfb;
   padding: 1%;
+  border-bottom: 2px solid #bec0af;
+  border-bottom: 2px solid #6B6C62;
 }
 header h1 {
   font-size: 48px;
@@ -96,9 +98,6 @@ header h1 {
 header h1 img {
   width: 35%;
 }
-header input {
-  display: none;
-}
 header label {
   width: 150px;
   margin: 0 0 15px 0;
@@ -106,9 +105,50 @@ header label {
   font-size: 36px;
   font-weight: bold;
   font-family: "PlayfairDisplayRegular", sans-serif;
+  transition: 0.6s;
 }
 header label:hover {
   cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ header {
+  width: 100%;
+  position: fixed;
+}
+
+input:checked ~ header label {
+  rotate: 90deg;
+}
+
+input:checked ~ header #menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  background-color: #fbfbfb;
+  background-color: #e2e3dd;
+  border-bottom: 2px solid #6B6C62;
+  height: 90vh;
+  position: fixed;
+  padding: 40px 0 0 0;
+  width: 100%;
+}
+input:checked ~ header #menu a {
+  display: block;
+  font-size: 32px;
+  color: #181818;
+  text-decoration: none;
+  padding: 20% 0;
+  transition: 0.8s;
+}
+input:checked ~ header #menu a:hover {
+  color: #e2e3dd;
+  text-shadow: 1px 1px 2px #181818;
 }
 
 #menu {
@@ -122,4 +162,53 @@ header label:hover {
 }
 #socialMedia ul li img {
   width: 25px;
+  filter: drop-shadow(1px 1px 1px #181818);
+  transition: 0.8s;
+}
+#socialMedia ul li img:hover {
+  filter: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% 0 0 0;
+  padding: 3% 0;
+  background-color: #2b2c28;
+}
+footer img {
+  width: 25%;
+  filter: drop-shadow(3px 3px 0 #181818);
+}
+footer h2 {
+  color: #fbfbfb;
+  font-size: 22px;
+  text-shadow: 3px 3px 0 #181818;
+}
+footer a {
+  color: #bec0af;
+  text-shadow: none;
+}
+footer a:hover {
+  text-decoration: none;
+}
+
+#footerSocials {
+  width: 100%;
+  margin: 2% 0;
+  display: flex;
+  justify-content: center;
+}
+#footerSocials ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+#footerSocials img {
+  width: 35px;
+  transition: 0.8s;
+}
+#footerSocials img:hover {
+  filter: none;
 }/*# sourceMappingURL=foundation.css.map */

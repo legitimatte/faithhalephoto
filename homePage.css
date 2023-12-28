@@ -1,29 +1,120 @@
+#homeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #heroSection {
   padding: 5% 0 0 0;
   display: flex;
   justify-content: center;
 }
 #heroSection img {
-  border-radius: 5%;
-  box-shadow: 5px 5px 5px #181818;
+  box-shadow: 5px 5px 5px #6B6C62;
 }
 
 #heroText {
-  width: 40%;
+  width: 30%;
   margin: 0 2%;
-  margin: 2% 2% 0 2%;
+  margin: 2% 5% 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 #heroText h1 {
-  font-family: "Barokah", sans-serif;
-  font-size: 74px;
-  font-size: 28px;
+  font-family: "Greatvibes", sans-serif;
+  font-size: 48px;
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 #heroText p {
   display: flex;
   line-height: 34px;
   font-size: 16px;
   font-family: "PlayfairDisplayRegular", sans-serif;
+}
+#heroText a {
+  margin: 0 35%;
+  padding: 15px 10px;
+  text-align: center;
+  background-color: #bec0af;
+  border-bottom: 2px solid #6B6C62;
+  border-right: 2px solid #6B6C62;
+  border-top: 2px solid #adaf9b;
+  border-left: 2px solid #adaf9b;
+  box-shadow: 3px 3px 5px #6B6C62;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#heroText a:hover {
+  border-bottom: 2px solid #adaf9b;
+  border-right: 2px solid #adaf9b;
+  border-top: 2px solid #6B6C62;
+  border-left: 2px solid #6B6C62;
+  box-shadow: 3px 3px 2px #6B6C62;
+}
+
+#heroHighlight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #22221f;
+  background-color: #2b2c28;
+  margin: 5% 0;
+  padding: 3% 0 7% 0;
+}
+#heroHighlight h2 {
+  color: #e2e3dd;
+  padding: 2% 0 3% 0;
+  font-size: 58px;
+  text-shadow: 3px 3px 0 #181818;
+  font-family: "PlayfairDisplayRegular", sans-serif;
+}
+
+#heroPhotos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#heroPhotos img {
+  margin: 0 1%;
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+}
+#services div {
+  margin: 0 2%;
+  text-align: center;
+  font-size: 58px;
+  font-family: "PlayfairDisplayRegular", sans-serif;
+}
+#services h2 {
+  margin: 0 0 10% 0;
+  text-shadow: 3px 3px 0 #fbfbfb;
+}
+
+#bookNow {
+  font-size: 28px;
+  margin: 2% 0 0 0;
+  padding: 18px;
+  background-color: #bec0af;
+  border-bottom: 4px solid #6B6C62;
+  border-right: 4px solid #6B6C62;
+  border-top: 4px solid #adaf9b;
+  border-left: 4px solid #adaf9b;
+  box-shadow: 3px 3px 5px #6B6C62;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+#bookNow:hover {
+  border-bottom: 4px solid #adaf9b;
+  border-right: 4px solid #adaf9b;
+  border-top: 4px solid #6B6C62;
+  border-left: 4px solid #6B6C62;
+  box-shadow: 3px 3px 2px #6B6C62;
 }/*# sourceMappingURL=homePage.css.map */

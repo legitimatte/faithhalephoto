@@ -1,4 +1,4 @@
-#homeMain {
+input:blank #homeMain {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,6 +121,8 @@
 }
 
 #bookNow {
+    color: #000000;
+    text-decoration: none;
     font-size: 28px;
     margin: 2% 0 0 0;
     padding: 18px;

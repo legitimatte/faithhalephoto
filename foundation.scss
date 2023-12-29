@@ -7,54 +7,36 @@
 }
 
 @font-face {
-    font-family: 'SenjaSantuy';
-    src: url('fonts/SenjaSantuy.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Barokah';
-    src: url('fonts/BarokahSignatureRegular.woff') format('woff');
-}
-
-@font-face {
     font-family: 'PlayfairDisplayRegular';
     src: url('fonts/PlayfairDisplayRegular.woff') format('woff');
 }
 
 body {
-    // background-color: #fbfbfb;
     background-color: #e2e3dd;
     z-index: 1;
 }
 
 main {
-    // background-color: #d5d7c8;
-    // background-color: #e2e3dd;
+
     min-height: 85vh;
 }
   
 li {
-    // font-family: 'Greatvibes', sans-serif;
-    // font-family: 'SenjaSantuy', sans-serif;
-    // font-family: 'Barokah', sans-serif;
-    // font-family: 'PlayfairDisplayRegular', sans-serif;
-    // font-size: 120px;
-    // margin: 5%;
-    // padding: 0;
+
     list-style-type: none;
 }
 
 header {
 
-    div {
+    div:nth-child(1) {
         display: flex;
         justify-content: center;
         align-items: center;
-        // background-color: red;
         background-color: #fbfbfb;
-        padding: 1%;
+        padding: 1% 1% 0.5% 1%;
         border-bottom: 2px solid #bec0af;
         border-bottom: 2px solid #6B6C62;
+        // border-bottom: 10px solid #6B6C62;
     }
 
     h1 {
@@ -64,6 +46,7 @@ header {
 
         img {
             width: 35%;
+            width: 325px;
         }
     }
 
@@ -73,7 +56,6 @@ header {
         text-align: center;
         font-size: 36px;
         font-weight: bold;
-        // background-color: green;
         font-family: 'PlayfairDisplayRegular', sans-serif;
         transition: 0.6s;
     }
@@ -87,16 +69,15 @@ input {
     display: none;
 }
 
-input:checked ~ header {
+input:checked ~ div header {
     width: 100%;
-    position: fixed;
 }
 
-input:checked ~ header label {
+input:checked ~ div header label {
     rotate: 90deg;
 }
 
-input:checked ~ header #menu {
+input:checked ~ div header #menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,26 +85,30 @@ input:checked ~ header #menu {
     z-index: 2;
     background-color: #fbfbfb;
     background-color: #e2e3dd;
-    border-bottom: 2px solid #6B6C62;
-    height: 90vh;
-    position: fixed;
-    padding: 40px 0 0 0;
+    // border-bottom: 2px solid #6B6C62;
+    // padding: 1% 0;
     width: 100%;
+
+    li {
+        padding: 25% 0 0 0;
+    }
 
     a {
         display: block;
-        font-size: 32px;
+        font-size: 28px;
         color: #181818;
         text-decoration: none;
-        padding: 20% 0;
         transition: 0.8s;
     }
 
     a:hover {
         color: #e2e3dd;
-        // color: #fbfbfb;
         text-shadow: 1px 1px 2px #181818;
     }
+}
+
+input:checked ~ div main, input:checked ~ div footer {
+    display: none;
 }
 
 #menu {
@@ -141,9 +126,9 @@ input:checked ~ header #menu {
         li {
 
             img {
-                width: 25px;
-                // filter: drop-shadow(1px 1px 1px #6B6C62);
-                // filter: drop-shadow(1px 1px 1px #2b2c28);
+                // width: 25px;
+                // width: 155%;
+                width: 1.5rem;
                 filter: drop-shadow(1px 1px 1px #181818);
                 transition: 0.8s
             }
@@ -155,20 +140,42 @@ input:checked ~ header #menu {
     }
 }
 
+#socialMediaMobile {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 25% 0;
+
+    li {
+        margin: 0 10%;
+        padding: 0;
+    }
+
+    img {
+        width: 1.8rem;
+        transition: 0.8s;
+    }
+
+    img:hover {
+        opacity: 35%;
+    }
+}
+
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5% 0 0 0;
-    padding: 3% 0;
+    padding: clamp(25px, 3%, 5rem) 0;
     background-color: #2b2c28;
 
     img {
-        width: 25%;
+        width: max(325px, 25%);
         filter: drop-shadow(3px 3px 0 #181818);
     }
 
     h2 {
+        margin: 0 5%;
+        text-align: center;
         color: #fbfbfb;
         font-size: 22px;
         text-shadow: 3px 3px 0 #181818;
@@ -186,15 +193,17 @@ footer {
 
 #footerSocials {
     width: 100%;
-    margin: 2% 0;
+    margin: clamp(25px, 2%, 3rem) 0;
     display: flex;
     justify-content: center;
+    // background-color: red;
 
     ul {
         width: 50%;
         display: flex;
         justify-content: space-around;
-        // background-color: red;
+        align-items: center;
+        // background-color: purple;
     }
 
     img {
@@ -204,5 +213,28 @@ footer {
 
     img:hover {
         filter: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header {
+
+        div:nth-child(1) {
+            flex-direction: column-reverse;
+
+            h1 {
+                margin: 4% auto 0 auto;
+            }
+            
+            nav {
+                display: none;
+            }
+        }
+    }
+
+    #footerSocials {
+        img {
+            width: 30px;
+        }
     }
 }

@@ -141,7 +141,7 @@ input:checked ~ div main, input:checked ~ div footer {
 }
 
 #socialMediaMobile {
-    display: flex;
+    display: none;
     justify-content: center;
     padding: 0 0 25% 0;
 
@@ -230,6 +230,10 @@ footer {
                 display: none;
             }
         }
+    }
+
+    #socialMediaMobile {
+        display: flex;
     }
 
     #footerSocials {

@@ -164,7 +164,7 @@ input:checked ~ div main, input:checked ~ div footer {
 }
 
 #socialMediaMobile {
-  display: flex;
+  display: none;
   justify-content: center;
   padding: 0 0 25% 0;
 }
@@ -236,6 +236,9 @@ footer a:hover {
   }
   header div:nth-child(1) nav {
     display: none;
+  }
+  #socialMediaMobile {
+    display: flex;
   }
   #footerSocials img {
     width: 30px;

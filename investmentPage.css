@@ -1,0 +1,59 @@
+#investmentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0;
+  background-image: url(/faithhalephoto/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#investmentMain h1 {
+  font-size: 64px;
+  color: #fbfbfb;
+  text-shadow: 3px 3px 0 #181818;
+}
+#investmentMain li {
+  margin: 10px 0 0 20px;
+  list-style-type: square;
+}
+
+#investmentContent {
+  width: 100%;
+  display: flex;
+  margin: 2% 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#lifestyle, #couples, #others, #special, #travel ul {
+  width: 15%;
+  padding: 25px 50px;
+  margin: 2%;
+  background-color: #fbfbfb;
+  background-image: linear-gradient(to bottom right, #fbfbfb, #e2e3dd);
+  box-shadow: 2px 2px 25px #181818;
+  border: 6px solid #bec0af;
+}
+#lifestyle div, #couples div, #others div, #special div, #travel ul div {
+  margin: 10% 0;
+}
+
+h2, h3 {
+  font-size: 22px;
+}
+
+#travel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#travel h1 {
+  margin: 5% 0;
+}
+#travel ul {
+  justify-content: center;
+  width: 100%;
+  width: 50%;
+  width: 60%;
+  font-size: 20px;
+}/*# sourceMappingURL=investmentPage.css.map */

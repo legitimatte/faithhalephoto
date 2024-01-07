@@ -1,16 +1,13 @@
-#heroSection {
-  padding: 5% 0 0 0;
+#aboutContent {
+  padding: 5% 0;
   display: flex;
   justify-content: center;
 }
-#heroSection img {
-  border-radius: 5%;
-  box-shadow: 5px 5px 10px #181818;
-  box-shadow: 5px 5px 5px #2d3126;
-  box-shadow: 5px 5px 10px #4B543B;
+#aboutContent img {
+  box-shadow: 5px 5px 5px #6B6C62;
 }
 
-#heroText {
+#aboutText {
   width: 40%;
   margin: 0 2%;
   margin: 2% 2% 0 2%;
@@ -18,13 +15,36 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-#heroText h1 {
+#aboutText h1 {
   font-family: "Greatvibes", sans-serif;
-  font-size: 74px;
+  font-size: 58px;
 }
-#heroText p {
+#aboutText p {
   display: flex;
   line-height: 34px;
   font-size: 16px;
+  font-size: 14px;
   font-family: "PlayfairDisplayRegular", sans-serif;
+}
+#aboutText a {
+  color: #000000;
+  margin: 0 40%;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #bec0af;
+  border-bottom: 2px solid #6B6C62;
+  border-right: 2px solid #6B6C62;
+  border-top: 2px solid #adaf9b;
+  border-left: 2px solid #adaf9b;
+  box-shadow: 3px 3px 5px #6B6C62;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#aboutText a:hover {
+  border-bottom: 2px solid #adaf9b;
+  border-right: 2px solid #adaf9b;
+  border-top: 2px solid #6B6C62;
+  border-left: 2px solid #6B6C62;
+  box-shadow: 3px 3px 2px #6B6C62;
 }/*# sourceMappingURL=aboutPage.css.map */

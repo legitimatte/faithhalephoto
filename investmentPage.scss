@@ -1,0 +1,91 @@
+//aboutPage
+
+#investmentMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 0;
+    background-image: url(/faithhalephoto/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    h1 {
+        font-size: 64px;
+        color: #fbfbfb;
+        // color: #e2e3dd;
+        text-shadow: 3px 3px 0 #181818;
+    }
+
+    li {
+        margin: 10px 0 0 20px;
+        list-style-type: square;
+    }
+}
+
+#investmentContent {
+        width: 100%;
+        display: flex;
+        margin: 2% 0;
+        // flex-direction: column;
+        // align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        // background-color: orange;
+}
+
+#lifestyle, #couples, #others, #special, #travel ul {
+    width: 15%;
+    // width: 20%;
+    padding: 25px 50px;
+    margin: 2%;
+    background-color: #fbfbfb;
+    // background-color: #e2e3dd;
+    background-image: linear-gradient(to bottom right, #fbfbfb, #e2e3dd);
+    box-shadow: 2px 2px 25px #181818;
+    // border: 6px solid #e2e3dd;
+    border: 6px solid #bec0af;
+    // box-sizing: border-box;
+
+    div {
+        margin: 10% 0;
+    }
+}
+
+h2, h3 {
+    font-size: 22px;
+}
+
+#travel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin: 5% 0;
+    }
+
+    ul {
+        // display: flex;
+        justify-content: center;
+        width: 100%;
+        width: 50%;
+        width: 60%;
+        font-size: 20px;
+    }
+}
+
+// #couples {
+
+// }
+
+// #others {
+
+// }
+
+// #special {
+
+// }
+
+// #investmentContent {
+
+// }

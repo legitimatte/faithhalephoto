@@ -64,8 +64,8 @@ var body = "First Name: " + firstName + "\nLast Name: " + lastName + "\nEmail: "
 Email.send({
     SecureToken: "ea53ad51-de31-46b7-bf97-84632e618b9d",
     To: "mattbmakingwebsites@gmail.com", // Replace with your recipient email address
-    From: email,
-    Subject: subject,
+    From: "matthewgb3@gmail.com",
+    Subject: "Form Message",
     Body: body
 }).then(
     alert("Email sent successfully")

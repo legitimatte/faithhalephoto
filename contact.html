@@ -3,6 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="This is the meta description">
+    <!-- <script type="text/javascript">
+        function sendEmail() {
+            
+        }
+    </script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
     <link rel="stylesheet" href="foundation.css">
     <link rel="stylesheet" href="contactPage.css">
     <title>Portfolio</title>
@@ -50,7 +57,36 @@
 
     <main id="contactMain">
         <div id="contactContent">
-           
+
+            <h1>GET IN CONTACT</h1>
+            <!-- <form onsubmit="event.preventDefault(); validateForm()" action="#"> -->
+            <form method="post">
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" placeholder="First Name">
+                <!-- <small class="error"></small> -->
+
+                <label for="lastName">Last Name</label>
+                <input id="lastName" type="text" placeholder="Last Name">
+                <!-- <small class="error"></small> -->
+
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="Email">
+                <!-- <small class="error"></small> -->
+
+                <label for="phoneNumber">Phone Number</label>
+                <input id="phoneNumber" type="text" placeholder="Phone Number">
+                <!-- <small class="error"></small> -->
+
+                <label for="message">Tell me everything</label>
+                <textarea id="message" cols="30" rows="10" placeholder="Tell me everything"></textarea>
+                <!-- <textarea id="message" type="textarea" placeholder="Tell me everything"> -->
+                <!-- <small class="error"></small> -->
+
+                <!-- <input id="submit" type="submit" onclick="sendEmail()"> -->
+                <input id="submit" type="submit">
+
+                <!-- <p id="success"></p> -->
+            </form>
         </div>
     </main>
 
@@ -70,3 +106,23 @@
 </div>
 </body>
 </html>
+
+
+<!-- <form action="#">
+    <label for="firstName">First Name</label>
+    <input id="firstName" type="text" placeholder="First Name">
+
+    <label for="lastName">Last Name</label>
+    <input id="lastName" type="text" placeholder="Last Name">
+
+    <label for="email">Email</label>
+    <input id="email" type="text" placeholder="Email">
+
+    <label for="phoneNumber">Phone Number</label>
+    <input id="phoneNumber" type="text" placeholder="Phone Number">
+
+    <label for="message">Tell me everything</label>
+    <textarea id="message" cols="30" rows="10" placeholder="Tell me everything"></textarea>
+
+    <input id="submit" type="submit">
+</form> -->

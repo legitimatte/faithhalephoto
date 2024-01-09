@@ -99,19 +99,19 @@ header label:hover {
   cursor: pointer;
 }
 
-input {
+#burgerMenu {
   display: none;
 }
 
-input:checked ~ div header {
+#burgerMenu:checked ~ div header {
   width: 100%;
 }
 
-input:checked ~ div header label {
+#burgerMenu:checked ~ div header label {
   rotate: 270deg;
 }
 
-input:checked ~ div header #menu {
+#burgerMenu:checked ~ div header #menu {
   display: flex;
   margin: unset;
   flex-direction: column;
@@ -123,17 +123,17 @@ input:checked ~ div header #menu {
   width: 100%;
   transition: 0.8s;
 }
-input:checked ~ div header #menu li {
+#burgerMenu:checked ~ div header #menu li {
   padding: 25% 0 0 0;
 }
-input:checked ~ div header #menu a {
+#burgerMenu:checked ~ div header #menu a {
   display: block;
   font-size: 28px;
   color: #181818;
   text-decoration: none;
   transition: 0.8s;
 }
-input:checked ~ div header #menu a:hover {
+#burgerMenu:checked ~ div header #menu a:hover {
   color: #e2e3dd;
   text-shadow: 1px 1px 2px #181818;
 }
@@ -142,7 +142,7 @@ main, footer {
   transition: 0.8s;
 }
 
-input:checked ~ div main, input:checked ~ div footer, input:checked ~ div #investmentMain {
+#burgerMenu:checked ~ div main, #burgerMenu:checked ~ div footer, #burgerMenu:checked ~ div #investmentMain {
   display: none;
 }
 

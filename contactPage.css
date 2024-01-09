@@ -1,1 +1,65 @@
-/*# sourceMappingURL=contactPage.css.map */
+#contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  color: #2b2c28;
+  text-shadow: 0.25px 0.25px 0 #181818;
+  margin: 30px 0;
+}
+#contactContent h1 {
+  font-size: 26px;
+  padding: 0 0 10px 0;
+}
+#contactContent form {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+#contactContent form label {
+  margin: 0 0 4px 0;
+}
+#contactContent form input {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  outline: none;
+  border-radius: 0;
+  border: 1px solid #2b2c28;
+  font-family: "PlayfairDisplayRegular";
+  background-color: #fbfbfb;
+}
+#contactContent form ::-moz-placeholder {
+  font-size: 16px;
+  font-family: "PlayfairDisplayRegular";
+}
+#contactContent form ::placeholder {
+  font-size: 16px;
+  font-family: "PlayfairDisplayRegular";
+}
+#contactContent form #message {
+  resize: none;
+  font-size: 18px;
+  padding: 5px;
+  outline: none;
+  border-radius: 0;
+  border: 1px solid #2b2c28;
+  font-family: "PlayfairDisplayRegular";
+  background-color: #fbfbfb;
+}
+#contactContent form #submit {
+  width: 35%;
+  margin: 20px auto 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "PlayfairDisplayRegular";
+  border: 1px solid #2b2c28;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: 0.6s;
+}
+#contactContent form #submit:hover {
+  background-color: #c0c0c0;
+}/*# sourceMappingURL=contactPage.css.map */

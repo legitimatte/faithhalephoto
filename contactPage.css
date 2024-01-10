@@ -1,3 +1,13 @@
+#contactMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contactMain img {
+  width: 100%;
+  z-index: 1;
+}
+
 #contactContent {
   display: flex;
   flex-direction: column;
@@ -5,14 +15,17 @@
   font-size: 22px;
   color: #2b2c28;
   text-shadow: 0.25px 0.25px 0 #181818;
-  margin: 30px 0;
+  z-index: 2;
+  margin: -250px 0 80px 0;
+  background-color: #fbfbfb;
+  padding: 60px;
 }
 #contactContent h1 {
-  font-size: 26px;
-  padding: 0 0 10px 0;
+  font-size: 38px;
+  margin: 0 0 20px 0;
+  text-align: center;
 }
 #contactContent form {
-  width: 25%;
   display: flex;
   flex-direction: column;
 }
@@ -59,7 +72,20 @@
   cursor: pointer;
   padding: 10px 0;
   transition: 0.6s;
+  background-color: #bec0af;
+  border: none;
 }
 #contactContent form #submit:hover {
-  background-color: #c0c0c0;
+  background-color: #e2e3dd;
+}
+
+#form2, #form3 {
+  display: flex;
+}
+#form2 div, #form3 div {
+  display: flex;
+  flex-direction: column;
+}
+#form2 div:nth-child(1), #form3 div:nth-child(1) {
+  margin: 0 10px 0 0;
 }/*# sourceMappingURL=contactPage.css.map */

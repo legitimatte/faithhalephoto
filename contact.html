@@ -56,26 +56,39 @@
     </header>
 
     <main id="contactMain">
-        <div id="contactContent">
+        <img src="https://unsplash.it/1500/400?image=26" alt="">
 
+        <div id="contactContent">
             <h1>GET IN CONTACT</h1>
             <!-- <form onsubmit="event.preventDefault(); validateForm()" action="#"> -->
             <form onsubmit="sendEmail();">
-                <label for="firstName">First Name</label>
-                <input id="firstName" type="text" placeholder="First Name">
-                <!-- <small class="error"></small> -->
+                <div id="form1">
+                    <div id="form2">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" type="text" placeholder="First Name">
+                            <!-- <small class="error"></small> -->
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input id="lastName" type="text" placeholder="Last Name">
+                            <!-- <small class="error"></small> -->
+                        </div>
+                    </div>
 
-                <label for="lastName">Last Name</label>
-                <input id="lastName" type="text" placeholder="Last Name">
-                <!-- <small class="error"></small> -->
-
-                <label for="email">Email</label>
-                <input id="email" type="text" placeholder="Email">
-                <!-- <small class="error"></small> -->
-
-                <label for="phoneNumber">Phone Number</label>
-                <input id="phoneNumber" type="text" placeholder="Phone Number">
-                <!-- <small class="error"></small> -->
+                    <div id="form3">
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="text" placeholder="Email">
+                            <!-- <small class="error"></small> -->
+                        </div>
+                        <div>
+                            <label for="phoneNumber">Phone Number</label>
+                            <input id="phoneNumber" type="text" placeholder="Phone Number">
+                            <!-- <small class="error"></small> -->
+                        </div>
+                    </div>
+                </div>
 
                 <label for="message">Tell me everything</label>
                 <textarea id="message" cols="30" rows="10" placeholder="Tell me everything"></textarea>

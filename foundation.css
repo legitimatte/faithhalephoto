@@ -146,7 +146,7 @@ main, footer {
   transition: 0.8s;
 }
 
-#burgerMenu:checked ~ div main, #burgerMenu:checked ~ div footer, #burgerMenu:checked ~ div #investmentMain {
+#burgerMenu:checked ~ div main, #burgerMenu:checked ~ div footer, #burgerMenu:checked ~ div #investmentMain, #burgerMenu:checked ~ div aside {
   display: none;
 }
 

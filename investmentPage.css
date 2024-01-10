@@ -34,6 +34,7 @@
   box-shadow: 2px 2px 25px #181818;
   border: 6px solid #bec0af;
   transition: 0.6s;
+  border-radius: 20px;
 }
 .card div {
   margin: 10% 0;

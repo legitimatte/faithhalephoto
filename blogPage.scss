@@ -1,9 +1,13 @@
 // blogPage
 #blogMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(images/bg.jpg);
 }
 
 #blogContent {
+    width: 80%;
     display: flex;
     // flex-direction: column;
     justify-content: space-evenly;
@@ -24,7 +28,7 @@
     text-align: center;
     width: 250px;
     aspect-ratio: 1/1;
-    padding: 30px;
+    padding: 0 30px;
     margin: 50px;
     font-size: 28px;
     font-weight: bold;
@@ -33,6 +37,7 @@
     background-image: linear-gradient(to bottom right, #fbfbfb, #e2e3dd);
     cursor: pointer;
     transition: 0.6s;
+    border-radius: 20px;
 
     h1 {
         margin: 0 0 25px 0;

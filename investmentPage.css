@@ -10,7 +10,7 @@
 #investmentMain h1 {
   font-size: 64px;
   color: #fbfbfb;
-  text-shadow: 3px 3px 0 #181818;
+  text-shadow: 2px 2px 0 #181818;
 }
 #investmentMain li {
   margin: 10px 0 0 20px;
@@ -25,7 +25,7 @@
   flex-wrap: wrap;
 }
 
-#lifestyle, #couples, #others, #special, #travel ul {
+.card {
   width: 15%;
   padding: 25px 50px;
   margin: 2%;
@@ -33,9 +33,14 @@
   background-image: linear-gradient(to bottom right, #fbfbfb, #e2e3dd);
   box-shadow: 2px 2px 25px #181818;
   border: 6px solid #bec0af;
+  transition: 0.6s;
 }
-#lifestyle div, #couples div, #others div, #special div, #travel ul div {
+.card div {
   margin: 10% 0;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 h2, h3 {

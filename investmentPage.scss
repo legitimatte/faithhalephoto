@@ -12,7 +12,7 @@
         font-size: 64px;
         color: #fbfbfb;
         // color: #e2e3dd;
-        text-shadow: 3px 3px 0 #181818;
+        text-shadow: 2px 2px 0 #181818;
     }
 
     li {
@@ -32,7 +32,25 @@
         // background-color: orange;
 }
 
-#lifestyle, #couples, #others, #special, #travel ul {
+// #lifestyle, #couples, #others, #special, #travel ul {
+//     width: 15%;
+//     // width: 20%;
+//     padding: 25px 50px;
+//     margin: 2%;
+//     background-color: #fbfbfb;
+//     // background-color: #e2e3dd;
+//     background-image: linear-gradient(to bottom right, #fbfbfb, #e2e3dd);
+//     box-shadow: 2px 2px 25px #181818;
+//     // border: 6px solid #e2e3dd;
+//     border: 6px solid #bec0af;
+//     // box-sizing: border-box;
+
+//     div {
+//         margin: 10% 0;
+//     }
+// }
+
+.card{
     width: 15%;
     // width: 20%;
     padding: 25px 50px;
@@ -44,10 +62,15 @@
     // border: 6px solid #e2e3dd;
     border: 6px solid #bec0af;
     // box-sizing: border-box;
+    transition: 0.6s;
 
     div {
         margin: 10% 0;
     }
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 h2, h3 {
